@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<php include "registro.html";></php>
+<php include "quizzes.html";></php>
+<php include "archivos.html"></php>
+<php include "Bienvenida.html"></php>
+<html>
+    <head>
+        <title>Ranking</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="segundo">
+            <span class="tituloseg">
+                <p><a href="Bienvenida.html">Inicio</a></p>
+                <span class="imagen"><img src="usuario.png" width="50px"/></span>
+            </span>
+        </header>
+        <table border ="1px" width="1520px" height="50px">
+            <tr>
+                <th><a href="archivos.html">Archivos</a></th>
+                <th><a href="quizzes.html">Quizzes</a></th>
+                <th><a href="Segunda_pagina.html">Ranking Global</a></th>
+            </tr>
+        </table>
+        {%for c in Usuarios%}
+        <table border="1px" width="1520px" height="50px">
+            <colgroup>
+                <col span="1" class="top10">
+                <col span="1" class="top20">
+                <col span="1" class="top30">
+            </colgroup>
+            <tr>
+                <th scope="col">Top 10</th>
+                <th scope="col">Top 20</th>
+                <th scope="col">Top 30</th>
+            </tr>
+            <tr>
+                <td>
+                <table border="1px" width="450px" height="100px">
+                    <thead>
+                        <th>Top 10</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Puesto</th>
+                            <th>Usuario</th>
+                            <th>Puntaje</th>
+                        </tr>
+                        <!--Recorrer la lista de datos de los puntajes-->
+                        <tr>
+                            <td>1</td>
+                            <td>Nombre1</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+                <td>
+                <table class="tb2" border="1px" width="450px" height="100px">
+                    <thead>
+                        <th>Top 20</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Puesto</th>
+                            <th>Usuario</th>
+                            <th>Puntaje</th>
+                        </tr>
+                        <!--Recorrer la lista de datos de los puntajes-->
+                        <tr>
+                            <td>21</td>
+                            <td>Nombre1</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+                <td>
+                <table border="1px" width="450px" height="100px">
+                    <colgroup>
+                        <col>
+                        <col span="3" class="Top 10">
+                        <col span="3" class="Top 20">
+                        <col span="3" class="Top 30">
+                    </colgroup>
+                    <thead>
+                        <th>Top 30</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Puesto</th>
+                            <th>Usuario</th>
+                            <th>Puntaje</th>
+                        </tr>
+                        <!--Recorrer la lista de datos de los puntajes-->
+                        <tr>
+                            <td>31</td>
+                            <td>Nombre1</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

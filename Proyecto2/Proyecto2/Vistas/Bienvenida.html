@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<php include "quizzes.html";></php>
+<php include "archivos.html"></php>
+<php include "Segunda_pagina.html"></php>
+<php include "registro.html"></php>
+<html>
+<head>
+    <title>Guia2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Bienvenidos a Guia2</h1>
+    </header>
+    <div class="FUB"> <!-- Formato Usuario Bienvenida-->
+        <form action="/formulario" method="post">
+            <label class= "tamano" for="Usuario">Usuario</label>
+            <br><br>
+            <input class= "tamano" type="Nombre" id="Usuario" name = "Usuario" placeholder="GodSlayer">
+            <br><br>
+            <label class= "tamano" for="Contraseña">Contraseña</label>
+            <br><br>
+            <input class= "tamano" type="password" id="Contraseña" name = "Contraseña" placeholder="Kamehouse123">
+            <br><br>
+            <button class= "boton1" type="submit"><a href="Segunda_pagina.html">Acceder</a></button>
+            <button class= "boton2" type="submit"><a href="registro.html">Resgistrarse</a></button>
+        </form>
+    </div>
+    <div class="TDB"> <!-- Texto de bienvenida-->
+            <p>
+                Es un proyecto realizado por y para estudiantes, con el fin de hacer el estudio un poco más dinámico y divertido
+                <br>
+                Fomentando la competitividad sana mediante un sistema de puntaje que se representara
+                en un Ranking que todo usuario podrá revisar
+            </p> <!-- Texto de bajo el titulo-->
+    </div>
+    
+</body>
+</html>

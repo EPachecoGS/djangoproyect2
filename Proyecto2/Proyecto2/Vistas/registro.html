@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<php include "quizzes.html";></php>
+<php include "archivos.html"></php>
+<php include "Bienvenida.html"></php>
+<php include "Segunda_pagina.html"></php>
+<html>
+    <head>
+        <title>Registro</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class ="Fondo">
+        <div class="FUB2"> <!-- Formato registro usuario-->
+            <form action="/formulario" method="post">
+                <label class= "tamano" for="Usuario">Usuario</label>
+                <br><br>
+                <input class= "tamano" type="Nombre" id="Usuario" name = "Usuario" placeholder="GodSlayer">
+                <br><br>
+                <label class= "tamano" for="Contraseña">Contraseña</label>
+                <br><br>
+                <input class= "tamano" type="password" id="Contraseña" name = "Contraseña" placeholder="Kamehouse123">
+                <br><br>
+                <label class ="tamano" for="Confirmacion">Confirmacion</label>
+                <br><br>
+                <input class="tamano" type="password" id="Contraseña2" name="Contraseña" placeholder="Kamehouse123">
+                <br><br>
+                <button class= "boton1" type="submit"><a href="Bienvenida.html">Finalizar Registro</a></button>
+            </form>
+        </div>
+    </body>
+</html>

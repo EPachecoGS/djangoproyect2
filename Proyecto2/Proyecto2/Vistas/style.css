@@ -1,0 +1,82 @@
+.tamano{
+    font-size: 1.40rem;
+    
+}
+.FUB{
+    border-style: solid;
+    border-color: black;
+    border-radius:2px;
+    height: 220px;
+    width: 300px;
+    text-align: left;
+    padding: 20px 20px;
+    position: relative;
+    top: 150px;
+    background-color:aquamarine;
+}
+.FUB2{
+    border-style: solid;
+    border-color: black;
+    border-radius:2px;
+    height: 290px;
+    width: 300px;
+    padding: 20px 20px;
+    position: relative;
+    margin: 12% 36%;
+    background-color:aquamarine;
+    text-align: left;
+}
+.Fondo{
+    background-color: blue;
+}
+header{
+    background-color: aquamarine;
+    padding: 2rem 1rem;
+}
+header h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.TDB{
+    font-size: 1.5rem;
+    border-style: solid;
+    border-color: black;
+    border-radius:2px;
+    height: 220px;
+    width: 600px;
+    text-align: justify;
+    position: relative;
+    top: -115px;
+    left: 400px;
+    padding: 20px 20px;
+    background-color:aquamarine;
+}
+.segundo{
+    background-color:aquamarine;
+    padding: 0.1px 0.1px;
+}
+.tituloseg{
+    position:relative;
+    bottom: 50px 20px;
+}
+
+.imagen{
+    display: inline-block;
+    margin-left: 96%;
+}
+.tb2{
+    position:relative;
+}
+.borde{
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.1%;
+    height:600px;
+    width: 1000px;
+}
+.cuadro{
+    border-style:solid;
+    border-color: aqua;
+    padding: 8%;
+    margin: 3px 3px;
+}
