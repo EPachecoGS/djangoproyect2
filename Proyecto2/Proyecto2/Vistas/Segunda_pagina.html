@@ -9,18 +9,18 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class="Fondo">
         <header class="segundo">
-            <span class="tituloseg">
-                <p><a href="Bienvenida.html">Inicio</a></p>
-                <span class="imagen"><img src="usuario.png" width="50px"/></span>
-            </span>
+            <div class="tituloseg">
+                <div><a class="link" href="Bienvenida.html"><h2>Inicio</h2></a></div>
+                <div class="imagen"><img src="usuario.png" width="50px"/></div>
+            </div>
         </header>
         <table border ="1px" width="1520px" height="50px">
             <tr>
-                <th><a href="archivos.html">Archivos</a></th>
-                <th><a href="quizzes.html">Quizzes</a></th>
-                <th><a href="Segunda_pagina.html">Ranking Global</a></th>
+                <th><a class="link" href="archivos.html">Archivos</a></th>
+                <th><a class="link" href="quizzes.html">Quizzes</a></th>
+                <th><a class="link" href="Segunda_pagina.html">Ranking Global</a></th>
             </tr>
         </table>
         {%for c in Usuarios%}
@@ -38,9 +38,6 @@
             <tr>
                 <td>
                 <table border="1px" width="450px" height="100px">
-                    <thead>
-                        <th>Top 10</th>
-                    </thead>
                     <tbody>
                         <tr>
                             <th>Puesto</th>
@@ -58,9 +55,6 @@
                 </td>
                 <td>
                 <table class="tb2" border="1px" width="450px" height="100px">
-                    <thead>
-                        <th>Top 20</th>
-                    </thead>
                     <tbody>
                         <tr>
                             <th>Puesto</th>
@@ -84,9 +78,6 @@
                         <col span="3" class="Top 20">
                         <col span="3" class="Top 30">
                     </colgroup>
-                    <thead>
-                        <th>Top 30</th>
-                    </thead>
                     <tbody>
                         <tr>
                             <th>Puesto</th>
