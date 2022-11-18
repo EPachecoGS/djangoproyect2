@@ -7,14 +7,17 @@
 <head>
     <title>Archivos</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style2.css">
+</head> 
+
 <body class="Fondo">
     <header class="segundo">
-        <span class="tituloseg">
-            <p><a class="link" href="Bienvenida.html">Inicio</a></p>
-            <span class="imagen"><img src="usuario.png" width="50px"/></span>
-        </span>
+        <div class="tituloseg">
+            <div><a class="link" href="Bienvenida.html"><h2>Inicio</h2></a></div>
+            <div class="imagen"><img src="imagenes/usuario.svg" width="50px"/></div>
+        </div>
     </header>
     <table border ="1px" width="1520px" height="50px">
         <tr>
@@ -23,13 +26,232 @@
             <th><a class="link" href="Segunda_pagina.html">Ranking Global</a></th>
         </tr>
     </table>
-    <div>
-        <ul>
-            <li class="Recuadro desplegable">Certamen 1</li>
-            <br><br>
-            <li class="Recuadro desplegable">Certamen 2</li>
-            <br><br>
-            <li class="Recuadro desplegable">Certamen 3</li>
+    <nav class="nav">
+        <ul class="list">
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="#" class="nav__link nav__link--inside"><h2>Certamen 1</h2></a>
+                    <img src="imagenes/arrow.svg" class="list__arrow">
+                </div>
+                <ul class="list__show">
+                    <li id="global" class="list__inside">
+                        <div class="list__button">
+                            <a href="#" class="nav__link nav__link--inside"><h3>Inecuaciones</h3></a>
+                        </div>
+                        <ul class="lista">
+                            <h4 class="subtitulo">Ejercicios</h4>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/186F12ANG7aNWTZBkiwJ_QUXYRz2hEj7_/view?usp=share_link">Ejercicios inecuaciones lineales</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/1EJ8zqtvLTOviDZgpoOLcshuShUrvYzGK/view?usp=share_link">Ejercicios inecuaciones con valor absoluto</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/1756E40o1udwM6LdYUAu38jTA1edlBOqf/view?usp=share_link">Ejercicios inecuaciones Racionales</a></li>
+                            <br>
+                            <h4 class="subtitulo">Videos</h4>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=CkVXbU-PNRs&ab_channel=Matem%C3%A1ticasprofeAlex"> Videos inecuaciones lineales</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=Bfb0efPKb-0&ab_channel=Matem%C3%A1ticasprofeAlex">Videos inecuaciones con valor absoluto</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=QLf7vVb6Wao&ab_channel=Matem%C3%A1ticasprofeAlex">Videos inecuaciones racionales</a></li> 
+                        </ul>
+                    </li>
+                    <li id="global" class="list__inside">
+                        <div class="list__button">
+                            <a href="#" class="nav__link nav__link--inside"><h3>Inducción y Demostraciones</h3></a>
+                        </div>
+                        <ul class="lista">
+                            <h4 class="subtitulo">Ejercicios</h4>
+                            <br>
+                            <li class="list_archivos"><a class="link" href="https://drive.google.com/file/d/1wPD1WNDSiZ7-N7CRzMXppVrlXS6yWwyC/view?usp=share_link">Demostraciones</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link" href="https://drive.google.com/file/d/1ba61Rs0kPun3fZy9H6Yw4OlRq7gEXDAg/view?usp=share_link">Inducción</a></li>
+                            <br>
+                        </ul>
+                        <ul class="lista">
+                            <br>
+                            <h4 class="subtitulo">Videos</h4>
+                            <br>
+                            <li class="list_archivos"><a class="link" href="https://www.youtube.com/watch?v=yAGoR6FUyi8&ab_channel=AULADEMATEM%C3%81TICA">Demostraciones</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link" href="https://www.youtube.com/watch?v=orhBEEKe9Ws&ab_channel=math2me">Inducción</a></li>
+                            <br>
+                        </ul>
+                    </li>
+                    <li id="global" class="list__inside">
+                        <div class="list__button">
+                            <a href="#" class="nav__link nav__link--inside"><h3>Logica proposicional</h3></a>
+                        </div>
+                        <ul class="lista">
+                            <h4 class="subtitulo">Ejercicios</h4>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/1eoROgtzChgVWKzDYt9iQpAzBHmaFlMHi/view?usp=share_link">Logica1</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/1IAkvYX6yebJXEDxnYiFMYcrs57V5z41A/view?usp=share_link">Logica2</a></li>
+                            <br>
+                        </ul>
+                        <ul class="lista">
+                            <br>
+                            <h4 class="subtitulo">Videos</h4>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=vKe0UKSpNQQ&ab_channel=Matem%C3%A1ticasprofeAlex">Introducción</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=BOydu7cpv70&ab_channel=TUPROFEENLINEA">Ejemplos</a></li>
+                            <br>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="#" class="nav__link nav__link--inside"><h2>Certamen 2</h2></a>
+                    <img src="imagenes/arrow.svg" class="list__arrow">
+                </div>
+                <ul class="list__show">
+                    <li id="global" class="list__inside">
+                        <div class="list__button">
+                            <a href="#" class="nav__link nav__link--inside"><h3>Inecuaciones</h3></a>
+                        </div>
+                        <ul class="lista">
+                            <h4 class="subtitulo">Ejercicios</h4>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/186F12ANG7aNWTZBkiwJ_QUXYRz2hEj7_/view?usp=share_link">Ejercicios inecuaciones lineales</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/1EJ8zqtvLTOviDZgpoOLcshuShUrvYzGK/view?usp=share_link">Ejercicios inecuaciones con valor absoluto</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/1756E40o1udwM6LdYUAu38jTA1edlBOqf/view?usp=share_link">Ejercicios inecuaciones Racionales</a></li>
+                            <br>
+                            <h4 class="subtitulo">Videos</h4>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=CkVXbU-PNRs&ab_channel=Matem%C3%A1ticasprofeAlex"> Videos inecuaciones lineales</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=Bfb0efPKb-0&ab_channel=Matem%C3%A1ticasprofeAlex">Videos inecuaciones con valor absoluto</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=QLf7vVb6Wao&ab_channel=Matem%C3%A1ticasprofeAlex">Videos inecuaciones racionales</a></li> 
+                        </ul>
+                    </li>
+                    <li id="global" class="list__inside">
+                        <div class="list__button">
+                            <a href="#" class="nav__link nav__link--inside"><h3>Inducción y Demostraciones</h3></a>
+                        </div>
+                        <ul class="lista">
+                            <h4 class="subtitulo">Ejercicios</h4>
+                            <br>
+                            <li class="list_archivos"><a class="link" href="https://drive.google.com/file/d/1wPD1WNDSiZ7-N7CRzMXppVrlXS6yWwyC/view?usp=share_link">Demostraciones</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link" href="https://drive.google.com/file/d/1ba61Rs0kPun3fZy9H6Yw4OlRq7gEXDAg/view?usp=share_link">Inducción</a></li>
+                            <br>
+                        </ul>
+                        <ul class="lista">
+                            <br>
+                            <h4 class="subtitulo">Videos</h4>
+                            <br>
+                            <li class="list_archivos"><a class="link" href="https://www.youtube.com/watch?v=yAGoR6FUyi8&ab_channel=AULADEMATEM%C3%81TICA">Demostraciones</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link" href="https://www.youtube.com/watch?v=orhBEEKe9Ws&ab_channel=math2me">Inducción</a></li>
+                            <br>
+                        </ul>
+                    </li>
+                    <li id="global" class="list__inside">
+                        <div class="list__button">
+                            <a href="#" class="nav__link nav__link--inside"><h3>Logica proposicional</h3></a>
+                        </div>
+                        <ul class="lista">
+                            <h4 class="subtitulo">Ejercicios</h4>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/1eoROgtzChgVWKzDYt9iQpAzBHmaFlMHi/view?usp=share_link">Logica1</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/1IAkvYX6yebJXEDxnYiFMYcrs57V5z41A/view?usp=share_link">Logica2</a></li>
+                            <br>
+                        </ul>
+                        <ul class="lista">
+                            <br>
+                            <h4 class="subtitulo">Videos</h4>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=vKe0UKSpNQQ&ab_channel=Matem%C3%A1ticasprofeAlex">Introducción</a></li>
+                            <br>
+                            <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=BOydu7cpv70&ab_channel=TUPROFEENLINEA">Ejemplos</a></li>
+                            <br>
+                        </ul>
+                    </li>
+                </ul>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link nav__link--inside"><h2>Certamen2</h2></a>
+                        <img src="imagenes/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li id="global" class="list__inside">
+                            <div class="list__button">
+                                <a href="#" class="nav__link nav__link--inside"><h3>Inecuaciones</h3></a>
+                            </div>
+                            <ul class="lista">
+                                <h4 class="subtitulo">Ejercicios</h4>
+                                <br>
+                                <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/186F12ANG7aNWTZBkiwJ_QUXYRz2hEj7_/view?usp=share_link">Ejercicios inecuaciones lineales</a></li>
+                                <br>
+                                <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/1EJ8zqtvLTOviDZgpoOLcshuShUrvYzGK/view?usp=share_link">Ejercicios inecuaciones con valor absoluto</a></li>
+                                <br>
+                                <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/1756E40o1udwM6LdYUAu38jTA1edlBOqf/view?usp=share_link">Ejercicios inecuaciones Racionales</a></li>
+                                <br>
+                                <h4 class="subtitulo">Videos</h4>
+                                <br>
+                                <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=CkVXbU-PNRs&ab_channel=Matem%C3%A1ticasprofeAlex"> Videos inecuaciones lineales</a></li>
+                                <br>
+                                <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=Bfb0efPKb-0&ab_channel=Matem%C3%A1ticasprofeAlex">Videos inecuaciones con valor absoluto</a></li>
+                                <br>
+                                <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=QLf7vVb6Wao&ab_channel=Matem%C3%A1ticasprofeAlex">Videos inecuaciones racionales</a></li> 
+                            </ul>
+                        </li>
+                        <li id="global" class="list__inside">
+                            <div class="list__button">
+                                <a href="#" class="nav__link nav__link--inside"><h3>Inducción y Demostraciones</h3></a>
+                            </div>
+                            <ul class="lista">
+                                <h4 class="subtitulo">Ejercicios</h4>
+                                <br>
+                                <li class="list_archivos"><a class="link" href="https://drive.google.com/file/d/1wPD1WNDSiZ7-N7CRzMXppVrlXS6yWwyC/view?usp=share_link">Demostraciones</a></li>
+                                <br>
+                                <li class="list_archivos"><a class="link" href="https://drive.google.com/file/d/1ba61Rs0kPun3fZy9H6Yw4OlRq7gEXDAg/view?usp=share_link">Inducción</a></li>
+                                <br>
+                            </ul>
+                            <ul class="lista">
+                                <br>
+                                <h4 class="subtitulo">Videos</h4>
+                                <br>
+                                <li class="list_archivos"><a class="link" href="https://www.youtube.com/watch?v=yAGoR6FUyi8&ab_channel=AULADEMATEM%C3%81TICA">Demostraciones</a></li>
+                                <br>
+                                <li class="list_archivos"><a class="link" href="https://www.youtube.com/watch?v=orhBEEKe9Ws&ab_channel=math2me">Inducción</a></li>
+                                <br>
+                            </ul>
+                        </li>
+                        <li id="global" class="list__inside">
+                            <div class="list__button">
+                                <a href="#" class="nav__link nav__link--inside"><h3>Logica proposicional</h3></a>
+                            </div>
+                            <ul class="lista">
+                                <h4 class="subtitulo">Ejercicios</h4>
+                                <br>
+                                <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/1eoROgtzChgVWKzDYt9iQpAzBHmaFlMHi/view?usp=share_link">Logica1</a></li>
+                                <br>
+                                <li class="list_archivos"><a class="link " href="https://drive.google.com/file/d/1IAkvYX6yebJXEDxnYiFMYcrs57V5z41A/view?usp=share_link">Logica2</a></li>
+                                <br>
+                            </ul>
+                            <ul class="lista">
+                                <br>
+                                <h4 class="subtitulo">Videos</h4>
+                                <br>
+                                <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=vKe0UKSpNQQ&ab_channel=Matem%C3%A1ticasprofeAlex">Introducción</a></li>
+                                <br>
+                                <li class="list_archivos"><a class="link " href="https://www.youtube.com/watch?v=BOydu7cpv70&ab_channel=TUPROFEENLINEA">Ejemplos</a></li>
+                                <br>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </li>
         </ul>
-    </div>
+    </nav>
+    <script src="script.js"></script>
 </body>
+</html>

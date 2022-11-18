@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myapp'
 ]
 
 MIDDLEWARE = [
@@ -55,7 +54,7 @@ ROOT_URLCONF = 'Proyecto2.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/ep237/OneDrive/Escritorio/djangoproyect2/Proyecto2/Proyecto2/Vistas"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -66,6 +65,7 @@ TEMPLATES = [
             ],
         },
     },
+    
 ]
 
 WSGI_APPLICATION = 'Proyecto2.wsgi.application'

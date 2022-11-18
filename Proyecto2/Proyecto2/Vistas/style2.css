@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.link{
+    color:black;
+    text-decoration: none;
+}
+
+.nav{
+    width: 100%;
+}
+.nav__link{
+    color: #303440;
+    display:block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+.nav__link--inside:hover{
+    background-color:aqua;
+
+}
+.nav__link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+}
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background-color:bisque ;
+}
+
+.list__item{
+    list-style-type: none;
+    width: 20%;
+    text-align: left; 
+    overflow: hidden;
+}
+.list__item--click{
+    cursor:pointer;
+}
+.list__button{
+    display:flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    padding: 10px 5px;
+}
+
+.arrow .list__arrow{
+    transform: 90deg;
+}
+.list__arrow{
+    transition: transform .3s;
+
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height 0.4s;
+    height: 0;
+}
+.lista{
+    display:table;
+    padding-left: 20%;
+    text-align: left;
+}
+.subtitulo{
+    text-decoration-color: #303440;
+
+}
+.list_archivos{
+    display: flex;
+    padding-left: 20%;
+    text-align: left;
+}
+#global {
+    height: 90px;
+    width: 200px;
+    border: 1px solid bisque;
+    background: bisque;
+    overflow-y: scroll;
+}
