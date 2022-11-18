@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-8yr%bfic&3+s^k-pdqxi&5)%clt5boaqdxa20p15b1xpm-g(lr
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+STATICFILES_DIRS=["C:/Users/ep237/OneDrive/Escritorio/djangoproyect2/Proyecto2/Proyecto2/Vistas/static"]
 
 # Application definition
 
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myapp'
 ]
 
 MIDDLEWARE = [
