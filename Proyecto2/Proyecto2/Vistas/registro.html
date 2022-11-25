@@ -3,6 +3,8 @@
 <php include "archivos.html"></php>
 <php include "Bienvenida.html"></php>
 <php include "Segunda_pagina.html"></php>
+<php include "tablas.html"></php>
+<php include "update.html"></php>
 <html>
     <head>
         <title>Registro</title>
@@ -11,18 +13,15 @@
     </head>
     <body class ="Fondo">
         <div class="FUB2"> <!-- Formato registro usuario-->
-            <form action="/formulario" method="post">
+            <form action="addrecord/" method="post">
+                {% csrf_token %}
                 <label class= "tamano" for="Usuario">Usuario</label>
                 <br><br>
-                <input class= "tamano" type="Nombre" id="Usuario" name = "Usuario" placeholder="Usuario">
+                <input class= "tamano" type="Nombre" id="Usuario" name = "first" placeholder="Usuario">
                 <br><br>
                 <label class= "tamano" for="Contraseña">Contraseña</label>
                 <br><br>
-                <input class= "tamano" type="password" id="Contraseña" name = "Contraseña" placeholder="Contraseña">
-                <br><br>
-                <label class ="tamano" for="Confirmacion">Confirmacion</label>
-                <br><br>
-                <input class="tamano" type="password" id="Contraseña2" name="Contraseña" placeholder="Contraseña">
+                <input class= "tamano" type="password" id="Contraseña" name = "last" placeholder="Contraseña">
                 <br><br>
                 <button class= "boton1" type="submit"><a class="link" href="Bienvenida.html">Finalizar Registro</a></button>
             </form>
