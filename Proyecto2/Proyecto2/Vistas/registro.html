@@ -9,22 +9,23 @@
     <head>
         <title>Registro</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <link rel="stylesheet" href="static/style.css">
+        <link rel="stylesheet" href="/static/style.css">
     </head>
     <body class ="Fondo">
         <div class="FUB2"> <!-- Formato registro usuario-->
-            <form action="addrecord/" method="post">
+            <form action="addrecord/" method="post" >
                 {% csrf_token %}
                 <label class= "tamano" for="Usuario">Usuario</label>
                 <br><br>
-                <input class= "tamano" type="Nombre" id="Usuario" name = "first" placeholder="Usuario">
+                <input class= "tamano" type="Nombre" name = "first" placeholder="Usuario">
                 <br><br>
                 <label class= "tamano" for="Contraseña">Contraseña</label>
                 <br><br>
-                <input class= "tamano" type="password" id="Contraseña" name = "last" placeholder="Contraseña">
+                <input class= "tamano" type="password" name = "last" placeholder="Contraseña">
                 <br><br>
-                <button class= "boton1" type="submit"><a class="link" href="Bienvenida.html">Finalizar Registro</a></button>
+                <button class= "boton1" type="submit">Finalizar Registro</button>
             </form>
+            <p><a href="tablas/">asdadads</a></p>
         </div>
     </body>
 </html>

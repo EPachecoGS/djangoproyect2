@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseBadRequest, request, HttpResponseRedirect
-from django.template import loader
+from django.template import loader, RequestContext
 from django.urls import reverse
 from .models import Members
 
@@ -8,10 +8,28 @@ from .models import Members
 def index(request):
     
     return render(request, "Bienvenida.html")
+
+def inicio(request):
+
+    return HttpResponseRedirect(reverse('index'))
+
+def quizzes(request):
+    plantilla = loader.get_template('quizzes.html')
+    return HttpResponse(plantilla.render({}, request))
+
+def archivos(request):
+    plantilla = loader.get_template('archivos.html')
+    return HttpResponse(plantilla.render({}, request))
+
     
 def registro(request):
+  plantilla = loader.get_template('registro.html')
+  return HttpResponse(plantilla.render({}, request))
+  
 
-    return render(request, "registro.html")
+def ranking(request):
+  plantilla = loader.get_template('Segunda_pagina.html')
+  return HttpResponse(plantilla.render({}, request))
 
 def tablas(request):
     mymembers = Members.objects.all().values()
@@ -20,6 +38,7 @@ def tablas(request):
         'mymembers': mymembers,
     }
     return HttpResponse(template.render(context, request))
+
 
 def add(request):
     template = loader.get_template('registro.html')
@@ -30,7 +49,7 @@ def addrecord(request):
     y = request.POST['last']
     member = Members(firstname = x, lastname = y)
     member.save()
-    return HttpResponseRedirect(reverse('tablas'))
+    return HttpResponseRedirect(reverse('index'))
 
 def delete(request, id):
     member = Members.objects.get(id=id)
