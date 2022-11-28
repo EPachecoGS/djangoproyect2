@@ -12,7 +12,7 @@
     padding: 20px 20px;
     position: relative;
     top: 150px;
-    background-color:aquamarine;
+    background-color:rgb(0, 148, 253);
 }
 .FUB2{
     border-style: solid;
@@ -27,10 +27,13 @@
     text-align: left;
 }
 .Fondo{
-    background-color:bisque;
+    background-image: url("https://static.abc.es/media/ciencia/2019/12/13/polvo-estrellas-kLOH--1248x698@abc.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 header{
-    background-color: aquamarine;
+    background-color: rgb(0, 148, 253);
     padding: 2rem 1rem;
 }
 header h1{
@@ -49,7 +52,7 @@ header h1{
     top: -115px;
     left: 400px;
     padding: 20px 20px;
-    background-color:aquamarine;
+    background-color:rgb(0, 148, 253);
 }
 .segundo{
     background-color:aquamarine;

@@ -82,10 +82,11 @@
     padding-left: 20%;
     text-align: left;
 }
+
 #global {
     height: 90px;
     width: 200px;
     border: 1px solid bisque;
     background: bisque;
-    overflow-y: scroll;
+    overflow-y: scroll hidden;
 }
