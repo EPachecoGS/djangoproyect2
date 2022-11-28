@@ -23,10 +23,8 @@ urlpatterns = [
     path("registro/", registro, name="registro"),
     path("registro/addrecord/", addrecord, name= "addrecord"),
     path("Segunda_pagina/", ranking, name="ranking"),
-    path("Segunda_pagina/Bienvenida/", inicio, name= "inicio"),
     path("Segunda_pagina/quizzes/", quizzes, name="quizzes"),
     path("Segunda_pagina/quizzes/Bienvenida/", inicio, name="inicio"),
     path("Segunda_pagina/archivos/", archivos, name="archivos"),
     path("Segunda_pagina/archivos/Bienvenida/", inicio, name="inicio"),
-
 ]

@@ -17,14 +17,14 @@
         <form action="/formulario" method="post">
             <label class= "tamano" for="Usuario">Usuario</label>
             <br><br>
-            <input class= "tamano" type="Nombre" id="Usuario" name = "Usuario" placeholder="GodSlayer">
+            <input class= "tamano" type="Nombre" name = "Usuario" placeholder="GodSlayer">
             <br><br>
             <label class= "tamano" for="Contraseña">Contraseña</label>
             <br><br>
-            <input class= "tamano" type="password" id="Contraseña" name = "Contraseña" placeholder="Kamehouse123">
+            <input class= "tamano" type="password" name = "Contraseña" placeholder="Kamehouse123">
             <br><br>
-            <button class= "boton1" ><a class="link" href="Segunda_pagina/">Acceder</a></button>
-            <button class= "boton2" ><a class="link" href="registro/">Resgistrarse</a></button>
+            <button class= "boton1" ><a class="link" href="{% url 'ranking' %}">Acceder</a></button>
+            <button class= "boton2" ><a class="link" href="{% url 'registro' %}">Resgistrarse</a></button>
         </form>
     </div>
     <div class="TDB"> <!-- Texto de bienvenida-->

@@ -12,15 +12,15 @@
     <body class="Fondo">
         <header class="segundo">
             <div class="tituloseg">
-                <div><a class="link" href="Bienvenida/"><h2>Inicio</h2></a></div>
+                <div><a class="link" href="{% url 'index'%}"><h2>Inicio</h2></a></div>
                 <div class="imagen"><img src="/static/usuario.svg" width="50px"/></div>
             </div>
         </header>
         <br>
         <table class= "tabla" border ="1px" width="1520px" height="50px">
             <tr>
-                <th><a class="link" href="archivos/">Archivos</a></th>
-                <th><a class="link" href="quizzes/">Quizzes</a></th>
+                <th><a class="link" href="{% url 'archivos' %}">Archivos</a></th>
+                <th><a class="link" href="{% url 'quizzes' %}">Quizzes</a></th>
                 <th>Ranking Global</th>
             </tr>
         </table>

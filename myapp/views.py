@@ -31,6 +31,7 @@ def ranking(request):
   plantilla = loader.get_template('Segunda_pagina.html')
   return HttpResponse(plantilla.render({}, request))
 
+
 def tablas(request):
     mymembers = Members.objects.all().values()
     template = loader.get_template('tablas.html')
@@ -43,7 +44,21 @@ def tablas(request):
 def add(request):
     template = loader.get_template('registro.html')
     return HttpResponse(template.render({}, request))
+'''
+def formulario(request):
+    mymember = Members.objects.all().values() 
+    name = request.POST['Usuario']
+    last = request.POST['Contraseña']
+    for x in mymember:
+        a = x[2]
+        b = x[1]
+        if (name == a) and (last == b):
+            plantilla = loader.get_template('Segunda_pagina.html')
+            return HttpResponse(plantilla.render({}, request))
+        else:
 
+            return HttpResponseRedirect(reverse('index'))
+'''
 def addrecord(request):
     x = request.POST['first']
     y = request.POST['last']

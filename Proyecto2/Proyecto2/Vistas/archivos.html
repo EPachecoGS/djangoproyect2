@@ -16,7 +16,7 @@
     <header class="segundo">
         <br>
         <div class="tituloseg">
-            <div><a class="link" href="Bienvenida/"><h2>Inicio</h2></a></div>
+            <div><a class="link" href="{% url 'index' %}"><h2>Inicio</h2></a></div>
             <div class="imagen"><img src="/static/usuario.svg" width="50px"/></div>
         </div>
     </header>
@@ -24,8 +24,8 @@
         <br>
         <tr>
             <th>Archivos</th>
-            <th><a class="link" href="quizzes/">Quizzes</a></th>
-            <th><a class="link" href="Segunda_pagina/">Ranking Global</a></th>
+            <th><a class="link" href="{% url 'quizzes' %}">Quizzes</a></th>
+            <th><a class="link" href="{% url 'ranking' %}">Ranking Global</a></th>
         </tr>
     </table>
     <nav class="nav">
