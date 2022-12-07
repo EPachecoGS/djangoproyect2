@@ -20,11 +20,16 @@ from myapp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",index, name="index"),
+    path("formulario/", formulario, name="formulario"),
     path("registro/", registro, name="registro"),
     path("registro/addrecord/", addrecord, name= "addrecord"),
     path("Segunda_pagina/", ranking, name="ranking"),
-    path("Segunda_pagina/quizzes/", quizzes, name="quizzes"),
+    path("Segunda_pagina/top/", top, name ="top"),
+    path("Segunda_pagina/quizzes/", home, name="quizzes"),
+    path("Segunda_pagina/quizzes/home/", home, name="home"),
+    path("Segunda_pagina/quizzes/home/Bienvenida/", inicio, name="inicio"),
     path("Segunda_pagina/quizzes/Bienvenida/", inicio, name="inicio"),
     path("Segunda_pagina/archivos/", archivos, name="archivos"),
+    path("Segunda_pagina/tablas/", tablas, name="tablas"),
     path("Segunda_pagina/archivos/Bienvenida/", inicio, name="inicio"),
 ]

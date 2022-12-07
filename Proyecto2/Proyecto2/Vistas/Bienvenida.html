@@ -15,16 +15,17 @@
         <h1> Bienvenidos a Guia2</h1>
     </header>
     <div class="FUB"> <!-- Formato Usuario Bienvenida-->
-        <form action="/formulario" method="post">
+        <form action="formulario/" method="post" onsubmit="return access();">
+            {% csrf_token %}
             <label class= "tamano" for="Usuario">Usuario</label>
             <br><br>
-            <input class= "tamano" type="Nombre" name = "Usuario" placeholder="GodSlayer">
+            <input class= "tamano" id ="usuario" type="Nombre" name = "Usuario" placeholder="Nombre de Usuario">
             <br><br>
             <label class= "tamano" for="Contraseña">Contraseña</label>
             <br><br>
-            <input class= "tamano" type="password" name = "Contraseña" placeholder="Kamehouse123">
+            <input class= "tamano" id= "contrasena" type="password" name = "Contraseña" placeholder="Ingrese su contraseña">
             <br><br>
-            <button class= "boton1" ><a class="link" href="{% url 'ranking' %}">Acceder</a></button>
+            <button class= "boton1" type="submit">Acceder</button>
             <button class= "boton2" ><a class="link" href="{% url 'registro' %}">Resgistrarse</a></button>
         </form>
     </div>
@@ -36,6 +37,9 @@
                 en un Ranking que todo usuario podrá revisar
             </p> <!-- Texto de bajo el titulo-->
     </div>
-    
 </body>
+<script src="/static/script.js"></script>
+<script>
+    
+</script>
 </html> 

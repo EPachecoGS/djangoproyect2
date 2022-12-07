@@ -1,0 +1,36 @@
+{% extends 'quizzes.html' %}
+
+{% block content %}
+    
+    <h1> {{ecuacion}} </h1> 
+
+    <form method="post">
+
+
+    <br>
+    <br>
+
+    {% csrf_token %}
+
+    {% if resuelto == "si" %}
+
+    <h2>Resuelto correctamente</h2>
+
+    {% else %}
+
+        {% if estado == "si" %}
+    
+            {{resultados}}
+
+        {% else %}
+
+            
+            {{respuesta}}
+        
+        {% endif %}
+
+        <button type="submit">O</button>
+    {% endif %}
+    </form>
+
+{% endblock %}

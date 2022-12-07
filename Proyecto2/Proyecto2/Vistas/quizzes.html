@@ -26,10 +26,14 @@
         </table>
         <br>
         <div class="borde">
-            <div class="cuadro">
-                <p>Ecuación a resolver</p> 
-            </div>
+            <main class="main">
+                {% block content %}
+                {% endblock %}
+                <br>
+                <button class= "ecuaciones" type="reset"><a class="link" href="{% url 'home' %}">Refrescar</a></button>
+            </main>
         </div>
     </body>
+
 
 </html>
